@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./App.css";
 
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import About from './components/pages/About';
+
 import Header from "./components/layout/Header";
 import AddTodo from "./components/AddTodo";
 import Todos from "./components/Todos";
 
-import {v4} from 'uuid';
+import { v4 } from "uuid";
 
-function App() {
+function App(props) {
   const [todos, setTodos] = useState([
     {
       id: v4(),
@@ -45,21 +49,34 @@ function App() {
     const newTodo = {
       id: v4(),
       title,
-      completed: false
-    }
-    setTodos(
-      [...todos, newTodo]
-    )
-  }
+      completed: false,
+    };
+    setTodos([...todos, newTodo]);
+  };
 
   return (
-    <div className="App">
-      <div className="container">
-        <Header />
-        <AddTodo addTodo={addTodo}/>
-        <Todos todos={todos} markComplete={markComplete} delTodo={delTodo} />
+    <Router>
+      <div className="App">
+        <div className="container">
+          <Header />
+          <Route
+            path="/"
+            exact
+            render={(props) => (
+              <React.Fragment>
+                <AddTodo addTodo={addTodo} />
+                <Todos
+                  todos={todos}
+                  markComplete={markComplete}
+                  delTodo={delTodo}
+                />
+              </React.Fragment>
+            )}
+          />
+          <Route path="/about" component={About}/>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
