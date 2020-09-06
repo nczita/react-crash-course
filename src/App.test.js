@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders Todos', () => {
   const { getByText } = render(<App />);
-  const appHeadingElement = getByText(/Todos/i);
+  const appHeadingElement = getByText(/TodoList/i);
   expect(appHeadingElement).toBeInTheDocument();
 });

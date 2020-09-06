@@ -35,6 +35,10 @@ Router and Links
 
 *Router and Links*
 
+Communication with backend
+
+*Axios and JsonPlaceholder*
+
 ## Concepts
 
 *map, filter, spread operator* - manipulate arrays
