@@ -23,6 +23,14 @@ Do some clanup
 
 *Cleanup*
 
+Basic compoments shows up
+
+*Basic components*
+
+More actions with forms
+
+*Add Todo*
+
 ## Concepts
 
 *map, filter, spread operator* - manipulate arrays
@@ -44,4 +52,6 @@ Visual Code:
 * Live Server
 * Python
 * Vetur
+* Prettier - Code formatter
+
 
