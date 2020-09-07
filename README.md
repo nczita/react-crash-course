@@ -39,12 +39,23 @@ Communication with backend
 
 *Axios and JsonPlaceholder*
 
+Some generic testcases in React Test Library
+
+*Add tests in RTL*
+
 ## Concepts
 
 *map, filter, spread operator* - manipulate arrays
 
 `...` - spread operator
 
+### Testing
+
+- [How to use React Testing Library Tutorial](https://www.robinwieruch.de/react-testing-library)
+- [Testing Library - DOM Testing Library - Queries](https://testing-library.com/docs/dom-testing-library/api-queries)
+- [Jest DOM](https://github.com/testing-library/jest-dom)
+- [Jest Expect](https://jestjs.io/docs/en/expect)
+- [Jest Mock Functions](https://jestjs.io/docs/en/mock-function-api)
 
 
 ## Extensions

@@ -15,13 +15,13 @@ function TodoItem(props) {
     const {id, title, completed} = props.todo;
 
     return (
-        <div style={getStyle()}>
+        <li style={getStyle()}>
             <p>
                 <input type='checkbox' defaultChecked={completed} onChange={() => props.markComplete(id)}/>
                 {title}
                 <button style={btnStyle} onClick={() => props.delTodo(id)}>x</button>
             </p>
-        </div>
+        </li>
     )
 }
 
